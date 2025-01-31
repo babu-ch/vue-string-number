@@ -1,6 +1,13 @@
 import { expect, it } from 'vitest';
+import {stringNumberRef} from "../stringNumberRef";
 
-it('add', () => {
-  expect(1).toBe(1)
-  expect(6).toBe(6)
+it('default', () => {
+  [
+    "123",
+    "１２３",
+    "ー１２３",
+    "abc１２３",
+  ].forEach(value => {
+    expect(stringNumberRef(value).value).toBe("123")
+  })
 })

@@ -12,14 +12,16 @@ export function stringNumberRef(
   value: string,
   options: StringNumberRefOptions = {allowDecimal: false, allowMinus: false}
 ) {
+  let internalValue = getValue(value, options);
+
   return customRef((track, trigger) => {
     return {
       get() {
         track()
-        return value
+        return internalValue
       },
       set(v) {
-        value = getValue(v, options)
+        internalValue = getValue(v, options)
         trigger()
       }
     }
