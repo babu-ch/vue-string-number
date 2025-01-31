@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import {dirname, resolve} from 'node:path'
 import {fileURLToPath} from 'node:url'
 import { defineConfig } from 'vite'
@@ -9,6 +10,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), dts({tsconfigPath:"./tsconfig.app.json"})],
+  test: {
+    include:["src/test/stringNumberRef.test.ts"]
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/stringNumberRef.ts'),
