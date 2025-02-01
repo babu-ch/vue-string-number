@@ -2,9 +2,9 @@ import {customRef} from 'vue'
 
 type StringNumberRefOptions = {
   // マイナス許可?
-  allowMinus: boolean,
+  allowMinus?: boolean,
   // 小数点許可?
-  allowDecimal: boolean
+  allowDecimal?: boolean
 }
 
 // 全角数値を半角数値にreplaceするやさしいrefです
@@ -31,7 +31,7 @@ export function stringNumberRef(
 // 変換後の値を返す
 function getValue(v: string, options: StringNumberRefOptions) {
   if (isFinite(Number(v))) {
-    return v
+    return getNumberText(v, options)
   }
   const replaced = toHalfWidth(v)
   if (replaced === "-") {
