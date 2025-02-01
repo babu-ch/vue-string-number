@@ -16,6 +16,7 @@ it('default', () => {
   ].forEach(value => {
     expect(stringNumberRef(value).value).toBe("123")
   })
+  expect(stringNumberRef("").value).toBe("")
 })
 
 it('allow minus', () => {

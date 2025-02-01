@@ -30,8 +30,11 @@ export function stringNumberRef(
 
 // 変換後の値を返す
 function getValue(v: string, options: StringNumberRefOptions) {
+  if (v === "") {
+    return ""
+  }
   if (isFinite(Number(v))) {
-    return getNumberText(v, options)
+    return getNumberText(v, options);
   }
   const replaced = toHalfWidth(v)
   if (replaced === "-") {
