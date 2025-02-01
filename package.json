@@ -1,6 +1,6 @@
 {
   "name": "vue-string-number-ref",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license" : "MIT",
   "description": "This is a Vue ref wrapper that converts full-width input into half-width numbers in the IME.",
   "type": "module",
