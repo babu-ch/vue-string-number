@@ -1,6 +1,7 @@
 {
   "name": "vue-string-number-ref",
   "version": "1.0.0",
+  "license" : "MIT",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/strNumRef.umd.cjs",
