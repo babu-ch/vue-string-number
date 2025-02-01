@@ -2,6 +2,8 @@
 
 IMEで全角入力になっていても半角数値に変換してくれるvueのrefのラッパーです
 
+![Image](https://github.com/user-attachments/assets/ed4565c8-4539-4f11-a416-d9328f9ca1b2)
+
 see
 
 https://qiita.com/babu-ch/items/5e3eecf801335ebc3508
