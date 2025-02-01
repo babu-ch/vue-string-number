@@ -29,7 +29,7 @@ const all = stringNumberRef("", {allowDecimal: true, allowMinus: true})
     <p>整数のみ <input type="text" v-model="text" ></p>
     <p>小数点許可 <input type="text" v-model="dec" ></p>
     <p>マイナス許可 <input type="text" v-model="min"></p>
-    <p>小数点&マイナス許可 <input type="text" v-model="all"></p>
+    <p>小数点+マイナス許可 <input type="text" v-model="all"></p>
   </div>
 </template>
 ```
