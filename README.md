@@ -8,6 +8,32 @@ see
 
 https://qiita.com/babu-ch/items/5e3eecf801335ebc3508
 
+# usage
+
+```
+npm i vue-string-number-ref
+```
+
+```vue
+<script setup lang="ts">
+import {stringNumberRef} from "vue-string-number-ref";
+
+const text = stringNumberRef("１２")
+const dec = stringNumberRef("", {allowDecimal: true, allowMinus: false})
+const min = stringNumberRef("", {allowDecimal: false, allowMinus: true})
+const all = stringNumberRef("", {allowDecimal: true, allowMinus: true})
+</script>
+
+<template>
+  <div>
+    <p>整数のみ <input type="text" v-model="text" ></p>
+    <p>小数点許可 <input type="text" v-model="dec" ></p>
+    <p>マイナス許可 <input type="text" v-model="min"></p>
+    <p>小数点&マイナス許可 <input type="text" v-model="all"></p>
+  </div>
+</template>
+```
+
 # setup
 
 npm i
