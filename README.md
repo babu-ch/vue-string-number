@@ -1,3 +1,19 @@
+# なにこれ？
+
+IMEで全角入力になっていても半角数値に変換してくれるrefです
+
+see
+
+https://qiita.com/babu-ch/items/5e3eecf801335ebc3508
+
+# setup
+
+npm i
+
+npm run dev
+
+npm run test
+
 # Vue 3 + TypeScript + Vite
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
