@@ -30,7 +30,7 @@ export function stringNumberRef(
 
 // 変換後の値を返す
 function getValue(v: string, options: StringNumberRefOptions) {
-  if (v === "") {
+  if (v.trim() === "") {
     return ""
   }
   if (isFinite(Number(v))) {
